@@ -14,7 +14,15 @@ function miniMaxSum(arr) {
   console.log(maxSum, minSum);
 }
 
-
 // =========== Solution 02 ===========
 
+function miniMaxSum(arr) {
+  // Write your code here
+  const minValue = Math.min(...arr);
+  const maxValue = Math.max(...arr);
 
+  const totalSum = arr.reduce((acc, sum) => acc + sum, 0);
+  const maxSum = totalSum - maxValue;
+  const minSum = totalSum - minValue;
+  console.log(maxSum, minSum);
+}
