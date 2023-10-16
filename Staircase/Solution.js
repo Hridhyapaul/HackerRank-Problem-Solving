@@ -18,3 +18,14 @@ function staircase(n) {
 staircase(6);
 
 // ================ Solution 02 =================
+
+function staircase(n) {
+    for (let i = 1; i < n+1; i++) {
+      const line = Array(i)
+        .fill("#")
+        .join("")
+      console.log(line);
+    }
+  }
+  
+  staircase(6);
